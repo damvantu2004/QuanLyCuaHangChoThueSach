@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
-namespace QuanLyCuaHangSach.Database
+namespace BAEK_PERCENT.Database
 {
     internal static class DatabaseLayer
     {

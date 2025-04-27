@@ -1,14 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using QuanLyCuaHangSach;
 
-namespace QuanLyCuaHangSach
+using System.Windows.Forms;
+
+
+namespace BAEK_PERCENT
 {
     internal static class Program
+
     {
+        private static MainFormManager mainFormManager;
+        public static MainFormManager FormControl
+        {
+            get { return mainFormManager; }
+        }
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -19,7 +23,10 @@ namespace QuanLyCuaHangSach
             Application.SetCompatibleTextRenderingDefault(false);
             Database.DatabaseLayer.Connect();
 
-            Application.Run(new fLogin() );
+            mainFormManager = new MainFormManager();
+            mainFormManager.CurrentForm = mainFormManager.loginForm;
+
+            Application.Run(mainFormManager);
         }
     }
 }

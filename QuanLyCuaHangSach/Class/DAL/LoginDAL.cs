@@ -1,14 +1,16 @@
-﻿using QuanLyCuaHangSach.Database;
+﻿using BAEK_PERCENT.Class.Types;
+using BAEK_PERCENT.Database;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace QuanLyCuaHangSach.DAL
+namespace BAEK_PERCENT.DAL
 {
     internal class LoginDAL
     {
-        public static int? TryLogin(string username, string password)
+        // UserRole? means it's a Nullable<UserRole>
+        public static UserRole? TryLogin(string username, string password)
         {
-            string sqlCheckKey = "SELECT Quyen FROM TaiKhoan WHERE TenDangNhap = @username AND MatKhau = @password";
+            string sqlCheckKey = "SELECT * FROM TaiKhoan WHERE TenDangNhap = @username AND MatKhau = @password";
             SqlParameter[] checkKeyParams = {
                 new SqlParameter("@username", username),
                 new SqlParameter("@password", password)
@@ -18,12 +20,12 @@ namespace QuanLyCuaHangSach.DAL
 
             if (dt.Rows.Count == 1)
             {
-                return dt.Rows[0]["Quyen"].Equals(0) ? 0 : 1; // 0: Admin, 1: Nhân viên
+                return dt.Rows[0]["Quyen"].Equals(1) ? UserRole.Admin : UserRole.User;
             }
             else
             {
                 return null;
-            }
+            };
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
 
-namespace QBAEK_PERCENT.Class
+namespace BAEK_PERCENT.Class
 {
     internal static class Functions
     {
