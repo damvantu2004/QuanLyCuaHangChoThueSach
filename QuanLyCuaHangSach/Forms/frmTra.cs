@@ -738,6 +738,7 @@ namespace BAEK_PERCENT.Forms
                 {
                     // Tiền phạt là 1 lần giá sách
                     int giaSach = SachDAL.GetGiaSach(txtMaSach.Text.Trim());
+
                     tienPhat = giaSach;
                 }
                 else if (viPham == "Hỏng sách")
@@ -768,6 +769,8 @@ namespace BAEK_PERCENT.Forms
 
         private void cboViPham_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+
             CalculateGiaPhat();
         }
 

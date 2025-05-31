@@ -174,7 +174,7 @@ namespace BAEK_PERCENT.Class
             exSheet.Rows[$"1:{rowIndex + 6}"].RowHeight = 16.5;
 
             // Lưu file Excel
-            string filePath = $"E:\\rkive\\6\\.NET\\BAEK\\Excel\\BillThue\\{tblThongTinThue.Rows[0]["MaThue"]}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"C:\\Users\\doant\\Desktop\\BC_CUAHANGSACH\\Thue\\{tblThongTinThue.Rows[0]["MaThue"]}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
@@ -383,7 +383,7 @@ namespace BAEK_PERCENT.Class
             exSheet.Rows[$"1:{rowIndex + 7}"].RowHeight = 16.5;
 
             // Lưu file Excel
-            string filePath = $"E:\\rkive\\6\\.NET\\BAEK\\Excel\\BillTra\\{tblThongTinTra.Rows[0]["MaTra"]}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"C:\\Users\\doant\\Desktop\\BC_CUAHANGSACH\\Tra\\{tblThongTinTra.Rows[0]["MaTra"]}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
@@ -502,7 +502,7 @@ namespace BAEK_PERCENT.Class
             string endDateStr = endDate.ToString("yyMMdd");
 
             // Lưu file Excel
-            string filePath = $"D:\\Study university\\nam 3\\lap trinh .net\\BTL\\DoanhThu\\DoanhThuThang\\BCDoanhThuThang_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"C:\\Users\\doant\\Desktop\\BC_CUAHANGSACH\\DoanhThuThang\\{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
@@ -628,7 +628,7 @@ namespace BAEK_PERCENT.Class
             string endDateStr = endDate.ToString("yyMMdd");
 
             // Lưu file Excel
-            string filePath = $"D:\\Study university\\nam 3\\lap trinh .net\\BTL\\DoanhThu\\DoanhThuTuan\\BCDoanhThuTuan_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"C:\\Users\\doant\\Desktop\\BC_CUAHANGSACH\\DoanhThuTuan\\{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
@@ -739,7 +739,7 @@ namespace BAEK_PERCENT.Class
             string endDateStr = endDate.ToString("yyMMdd");
 
             // Lưu file Excel
-            string filePath = $"D:\\Study university\\nam 3\\lap trinh .net\\BTL\\DoanhThu\\DoanhThuNgay\\BCDoanhThuNgay_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"C:\\Users\\doant\\Desktop\\BC_CUAHANGSACH\\DoanhThuNgay\\{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
@@ -842,7 +842,7 @@ namespace BAEK_PERCENT.Class
             string endDateStr = endDate.ToString("yyMMdd");
 
             // Lưu file Excel
-            string filePath = $"E:\\rkive\\6\\.NET\\BAEK\\Excel\\BaoCao\\LoaiSachYeuThich\\BCLoaiSachYeuThich_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"C:\\Users\\doant\\Desktop\\BC_CUAHANGSACH\\LoaiSachYeuThich\\{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
@@ -945,7 +945,7 @@ namespace BAEK_PERCENT.Class
             string endDateStr = endDate.ToString("yyMMdd");
 
             // Lưu file Excel
-            string filePath = $"E:\\rkive\\6\\.NET\\BAEK\\Excel\\BaoCao\\SachYeuThich\\BCSachYeuThich_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"C:\\Users\\doant\\Desktop\\BC_CUAHANGSACH\\SachYeuThich\\{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
@@ -1055,7 +1055,7 @@ namespace BAEK_PERCENT.Class
             string endDateStr = endDate.ToString("yyMMdd");
 
             // Lưu file Excel
-            string filePath = $"E:\\rkive\\6\\.NET\\BAEK\\Excel\\BaoCao\\SachYeuThich\\BCSachMatHong_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"C:\\Users\\doant\\Desktop\\BC_CUAHANGSACH\\MatHong\\{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
