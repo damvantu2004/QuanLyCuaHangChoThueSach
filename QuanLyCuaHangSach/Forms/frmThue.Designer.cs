@@ -80,7 +80,7 @@
             this.btnTimKiem.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnTimKiem.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnTimKiem.Depth = 0;
-            this.btnTimKiem.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.HighEmphasis = true;
             this.btnTimKiem.Icon = null;
             this.btnTimKiem.Location = new System.Drawing.Point(905, 27);
@@ -176,7 +176,7 @@
             this.txtNgayTra.BeepOnError = false;
             this.txtNgayTra.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
             this.txtNgayTra.Depth = 0;
-            this.txtNgayTra.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNgayTra.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNgayTra.HidePromptOnLeave = false;
             this.txtNgayTra.HideSelection = true;
             this.txtNgayTra.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
@@ -221,7 +221,7 @@
             this.txtTenKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtTenKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTenKH.Depth = 0;
-            this.txtTenKH.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenKH.HideSelection = true;
             this.txtTenKH.LeadingIcon = null;
             this.txtTenKH.Location = new System.Drawing.Point(406, 91);
@@ -254,7 +254,7 @@
             this.txtTenNV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtTenNV.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTenNV.Depth = 0;
-            this.txtTenNV.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenNV.HideSelection = true;
             this.txtTenNV.LeadingIcon = null;
             this.txtTenNV.Location = new System.Drawing.Point(406, 155);
@@ -287,7 +287,7 @@
             this.txtTienDatCoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtTienDatCoc.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTienDatCoc.Depth = 0;
-            this.txtTienDatCoc.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTienDatCoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTienDatCoc.HideSelection = true;
             this.txtTienDatCoc.LeadingIcon = null;
             this.txtTienDatCoc.Location = new System.Drawing.Point(878, 28);
@@ -320,7 +320,7 @@
             this.txtMaKH.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtMaKH.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtMaKH.Depth = 0;
-            this.txtMaKH.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaKH.HideSelection = true;
             this.txtMaKH.LeadingIcon = null;
             this.txtMaKH.Location = new System.Drawing.Point(129, 91);
@@ -393,7 +393,7 @@
             this.txtMaThue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtMaThue.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtMaThue.Depth = 0;
-            this.txtMaThue.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaThue.HideSelection = true;
             this.txtMaThue.LeadingIcon = null;
             this.txtMaThue.Location = new System.Drawing.Point(129, 28);
@@ -484,7 +484,7 @@
             this.txtNgayThue.BeepOnError = false;
             this.txtNgayThue.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
             this.txtNgayThue.Depth = 0;
-            this.txtNgayThue.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtNgayThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.txtNgayThue.HidePromptOnLeave = false;
             this.txtNgayThue.HideSelection = true;
             this.txtNgayThue.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
@@ -528,7 +528,7 @@
             this.txtMaNV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtMaNV.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtMaNV.Depth = 0;
-            this.txtMaNV.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNV.HideSelection = true;
             this.txtMaNV.LeadingIcon = null;
             this.txtMaNV.Location = new System.Drawing.Point(129, 155);
@@ -562,7 +562,7 @@
             this.txtTimKiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtTimKiem.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTimKiem.Depth = 0;
-            this.txtTimKiem.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.HideSelection = true;
             this.txtTimKiem.LeadingIcon = null;
             this.txtTimKiem.Location = new System.Drawing.Point(27, 27);
@@ -599,7 +599,7 @@
             this.listViewCTThue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listViewCTThue.CheckBoxes = true;
             this.listViewCTThue.Depth = 0;
-            this.listViewCTThue.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewCTThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewCTThue.FullRowSelect = true;
             this.listViewCTThue.HideSelection = false;
             this.listViewCTThue.Location = new System.Drawing.Point(24, 217);
@@ -622,7 +622,7 @@
             this.btnThemSach.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnThemSach.Depth = 0;
             this.btnThemSach.DrawShadows = false;
-            this.btnThemSach.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemSach.HighEmphasis = true;
             this.btnThemSach.Icon = null;
             this.btnThemSach.Location = new System.Drawing.Point(48, 409);
@@ -672,7 +672,7 @@
             this.txtGiaThue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtGiaThue.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtGiaThue.Depth = 0;
-            this.txtGiaThue.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiaThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaThue.HideSelection = true;
             this.txtGiaThue.LeadingIcon = null;
             this.txtGiaThue.Location = new System.Drawing.Point(24, 152);
@@ -718,7 +718,7 @@
             this.btnSuaSach.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnSuaSach.Depth = 0;
             this.btnSuaSach.DrawShadows = false;
-            this.btnSuaSach.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSuaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSuaSach.HighEmphasis = true;
             this.btnSuaSach.Icon = null;
             this.btnSuaSach.Location = new System.Drawing.Point(167, 409);
@@ -795,7 +795,7 @@
             this.txtTenSach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtTenSach.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTenSach.Depth = 0;
-            this.txtTenSach.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenSach.HideSelection = true;
             this.txtTenSach.LeadingIcon = null;
             this.txtTenSach.Location = new System.Drawing.Point(177, 61);
@@ -841,7 +841,7 @@
             this.btnXoaSach.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnXoaSach.Depth = 0;
             this.btnXoaSach.DrawShadows = false;
-            this.btnXoaSach.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoaSach.HighEmphasis = true;
             this.btnXoaSach.Icon = null;
             this.btnXoaSach.Location = new System.Drawing.Point(284, 409);
@@ -867,7 +867,7 @@
             this.txtMaSach.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.txtMaSach.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtMaSach.Depth = 0;
-            this.txtMaSach.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaSach.HideSelection = true;
             this.txtMaSach.LeadingIcon = null;
             this.txtMaSach.Location = new System.Drawing.Point(24, 61);
@@ -915,7 +915,7 @@
             this.listViewThue.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listViewThue.CheckBoxes = true;
             this.listViewThue.Depth = 0;
-            this.listViewThue.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewThue.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listViewThue.FullRowSelect = true;
             this.listViewThue.HideSelection = false;
             this.listViewThue.Location = new System.Drawing.Point(27, 338);
@@ -938,7 +938,7 @@
             this.btnIn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnIn.Depth = 0;
             this.btnIn.DrawShadows = false;
-            this.btnIn.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIn.HighEmphasis = true;
             this.btnIn.Icon = null;
             this.btnIn.Location = new System.Drawing.Point(444, 740);
@@ -964,7 +964,7 @@
             this.btnHuy.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnHuy.Depth = 0;
             this.btnHuy.DrawShadows = false;
-            this.btnHuy.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.HighEmphasis = true;
             this.btnHuy.Icon = null;
             this.btnHuy.Location = new System.Drawing.Point(354, 740);
@@ -990,7 +990,7 @@
             this.btnLuu.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnLuu.Depth = 0;
             this.btnLuu.DrawShadows = false;
-            this.btnLuu.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.HighEmphasis = true;
             this.btnLuu.Icon = null;
             this.btnLuu.Location = new System.Drawing.Point(264, 740);
@@ -1016,7 +1016,7 @@
             this.btnXoa.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnXoa.Depth = 0;
             this.btnXoa.DrawShadows = false;
-            this.btnXoa.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.HighEmphasis = true;
             this.btnXoa.Icon = null;
             this.btnXoa.Location = new System.Drawing.Point(175, 740);
@@ -1042,7 +1042,7 @@
             this.btnThem.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
             this.btnThem.Depth = 0;
             this.btnThem.DrawShadows = false;
-            this.btnThem.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.HighEmphasis = true;
             this.btnThem.Icon = null;
             this.btnThem.Location = new System.Drawing.Point(85, 740);
