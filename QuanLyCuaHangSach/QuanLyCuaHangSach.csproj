@@ -175,296 +175,299 @@
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
-	<ItemGroup>
-		<Compile Include="Class\DAL\BaoCaoDAL.cs" />
-		<Compile Include="Class\Types\UserRole.cs" />
-		<Compile Include="Forms\frmBaoCao.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmBaoCao.Designer.cs">
-			<DependentUpon>frmBaoCao.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmHome.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmHome.Designer.cs">
-			<DependentUpon>frmHome.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmThongTin.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmThongTin.Designer.cs">
-			<DependentUpon>frmThongTin.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmThue.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmThue.Designer.cs">
-			<DependentUpon>frmThue.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\newfrmLogin.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\newfrmLogin.Designer.cs">
-			<DependentUpon>newfrmLogin.cs</DependentUpon>
-		</Compile>
-		<Compile Include="MainFormManager.cs" />
-		<Compile Include="Class\ExcelHelper.cs" />
-		<Compile Include="Class\Functions.cs" />
-		<Compile Include="Class\DatabaseLayer.cs" />
-		<Compile Include="Class\DAL\KhachHangDAL.cs" />
-		<Compile Include="Class\DAL\LinhVucDAL.cs" />
-		<Compile Include="Class\DAL\LoaiSachDAL.cs" />
-		<Compile Include="Class\DAL\LoginDAL.cs" />
-		<Compile Include="Class\DAL\NgonNguDAL.cs" />
-		<Compile Include="Class\DAL\NhanVienDAL.cs" />
-		<Compile Include="Class\DAL\SachDAL.cs" />
-		<Compile Include="Class\DAL\TacGiaDAL.cs" />
-		<Compile Include="Class\DAL\TaiKhoanDAL.cs" />
-		<Compile Include="Class\DAL\ThueDAL.cs" />
-		<Compile Include="Class\DAL\TraDAL.cs" />
-		<Compile Include="Class\DAL\ViPhamDAL.cs" />
-		<Compile Include="Forms\frmKhach.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmKhach.Designer.cs">
-			<DependentUpon>frmKhach.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmLinhVuc.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmLinhVuc.Designer.cs">
-			<DependentUpon>frmLinhVuc.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmLoaiSach.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmLoaiSach.Designer.cs">
-			<DependentUpon>frmLoaiSach.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmMain.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmMain.Designer.cs">
-			<DependentUpon>frmMain.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmNgonNgu.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmNgonNgu.Designer.cs">
-			<DependentUpon>frmNgonNgu.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmNhanVien.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmNhanVien.Designer.cs">
-			<DependentUpon>frmNhanVien.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmSach.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmSach.Designer.cs">
-			<DependentUpon>frmSach.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmTacGia.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmTacGia.Designer.cs">
-			<DependentUpon>frmTacGia.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmTaiKhoan.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmTaiKhoan.Designer.cs">
-			<DependentUpon>frmTaiKhoan.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmTra.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmTra.Designer.cs">
-			<DependentUpon>frmTra.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Forms\frmViPham.cs">
-			<SubType>Form</SubType>
-		</Compile>
-		<Compile Include="Forms\frmViPham.Designer.cs">
-			<DependentUpon>frmViPham.cs</DependentUpon>
-		</Compile>
-		<Compile Include="Program.cs" />
-		<Compile Include="Properties\AssemblyInfo.cs" />
-		<EmbeddedResource Include="Forms\frmBaoCao.resx">
-			<DependentUpon>frmBaoCao.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmHome.resx">
-			<DependentUpon>frmHome.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmThongTin.resx">
-			<DependentUpon>frmThongTin.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmThue.resx">
-			<DependentUpon>frmThue.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\newfrmLogin.resx">
-			<DependentUpon>newfrmLogin.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmKhach.resx">
-			<DependentUpon>frmKhach.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmLinhVuc.resx">
-			<DependentUpon>frmLinhVuc.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmLoaiSach.resx">
-			<DependentUpon>frmLoaiSach.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmMain.resx">
-			<DependentUpon>frmMain.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmNgonNgu.resx">
-			<DependentUpon>frmNgonNgu.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmNhanVien.resx">
-			<DependentUpon>frmNhanVien.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmSach.resx">
-			<DependentUpon>frmSach.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmTacGia.resx">
-			<DependentUpon>frmTacGia.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmTaiKhoan.resx">
-			<DependentUpon>frmTaiKhoan.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmTra.resx">
-			<DependentUpon>frmTra.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Forms\frmViPham.resx">
-			<DependentUpon>frmViPham.cs</DependentUpon>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Properties\Resources.resx">
-			<Generator>ResXFileCodeGenerator</Generator>
-			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
-			<SubType>Designer</SubType>
-		</EmbeddedResource>
-		<Compile Include="Properties\Resources.Designer.cs">
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Resources.resx</DependentUpon>
-			<DesignTime>True</DesignTime>
-		</Compile>
-		<None Include="packages.config" />
-		<None Include="Properties\Settings.settings">
-			<Generator>SettingsSingleFileGenerator</Generator>
-			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
-		</None>
-		<Compile Include="Properties\Settings.Designer.cs">
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Settings.settings</DependentUpon>
-			<DesignTimeSharedInput>True</DesignTimeSharedInput>
-		</Compile>
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="App.config" />
-	</ItemGroup>
-	<ItemGroup>
-		<COMReference Include="Microsoft.Office.Core">
-			<Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
-			<VersionMajor>2</VersionMajor>
-			<VersionMinor>8</VersionMinor>
-			<Lcid>0</Lcid>
-			<WrapperTool>primary</WrapperTool>
-			<Isolated>False</Isolated>
-			<EmbedInteropTypes>True</EmbedInteropTypes>
-		</COMReference>
-		<COMReference Include="Microsoft.Office.Interop.Excel">
-			<Guid>{00020813-0000-0000-C000-000000000046}</Guid>
-			<VersionMajor>1</VersionMajor>
-			<VersionMinor>9</VersionMinor>
-			<Lcid>0</Lcid>
-			<WrapperTool>primary</WrapperTool>
-			<Isolated>False</Isolated>
-			<EmbedInteropTypes>True</EmbedInteropTypes>
-		</COMReference>
-		<COMReference Include="VBIDE">
-			<Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
-			<VersionMajor>5</VersionMajor>
-			<VersionMinor>3</VersionMinor>
-			<Lcid>0</Lcid>
-			<WrapperTool>primary</WrapperTool>
-			<Isolated>False</Isolated>
-			<EmbedInteropTypes>True</EmbedInteropTypes>
-		</COMReference>
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\ForwardIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\HomeIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\KhachHangIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\LinhVucIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\LoaiSachIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\LogoutIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\NgonNguIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\NhanVienIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\SachTruyenIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\TacGiaIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\TaiKhoanIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\ThueSachIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\TraSachIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\ViPhamIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\ThongTinIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\ReportIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<WCFMetadata Include="Connected Services\" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\Login_LeftImg.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\Login_LeftImgCut.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\Login_Logo.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<None Include="Resources\AppIcon.png" />
-	</ItemGroup>
-	<ItemGroup>
-		<Content Include="AppIcon.ico" />
-	</ItemGroup>
-	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-	<Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
-	<Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-		<PropertyGroup>
-			<ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-		</PropertyGroup>
-		<Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets'))" />
-	</Target>
+  <ItemGroup>
+    <Compile Include="Class\DAL\BaoCaoDAL.cs" />
+    <Compile Include="Class\Types\UserRole.cs" />
+    <Compile Include="Forms\frmBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBaoCao.Designer.cs">
+      <DependentUpon>frmBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmThongTin.Designer.cs">
+      <DependentUpon>frmThongTin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmThue.Designer.cs">
+      <DependentUpon>frmThue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\newfrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\newfrmLogin.Designer.cs">
+      <DependentUpon>newfrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormManager.cs" />
+    <Compile Include="Class\ExcelHelper.cs" />
+    <Compile Include="Class\Functions.cs" />
+    <Compile Include="Class\DatabaseLayer.cs" />
+    <Compile Include="Class\DAL\KhachHangDAL.cs" />
+    <Compile Include="Class\DAL\LinhVucDAL.cs" />
+    <Compile Include="Class\DAL\LoaiSachDAL.cs" />
+    <Compile Include="Class\DAL\LoginDAL.cs" />
+    <Compile Include="Class\DAL\NgonNguDAL.cs" />
+    <Compile Include="Class\DAL\NhanVienDAL.cs" />
+    <Compile Include="Class\DAL\SachDAL.cs" />
+    <Compile Include="Class\DAL\TacGiaDAL.cs" />
+    <Compile Include="Class\DAL\TaiKhoanDAL.cs" />
+    <Compile Include="Class\DAL\ThueDAL.cs" />
+    <Compile Include="Class\DAL\TraDAL.cs" />
+    <Compile Include="Class\DAL\ViPhamDAL.cs" />
+    <Compile Include="Forms\frmKhach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKhach.Designer.cs">
+      <DependentUpon>frmKhach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLinhVuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLinhVuc.Designer.cs">
+      <DependentUpon>frmLinhVuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLoaiSach.Designer.cs">
+      <DependentUpon>frmLoaiSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNgonNgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNgonNgu.Designer.cs">
+      <DependentUpon>frmNgonNgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSach.Designer.cs">
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTacGia.Designer.cs">
+      <DependentUpon>frmTacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTaiKhoan.Designer.cs">
+      <DependentUpon>frmTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTra.Designer.cs">
+      <DependentUpon>frmTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmViPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmViPham.Designer.cs">
+      <DependentUpon>frmViPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmBaoCao.resx">
+      <DependentUpon>frmBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmThongTin.resx">
+      <DependentUpon>frmThongTin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmThue.resx">
+      <DependentUpon>frmThue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\newfrmLogin.resx">
+      <DependentUpon>newfrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKhach.resx">
+      <DependentUpon>frmKhach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLinhVuc.resx">
+      <DependentUpon>frmLinhVuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLoaiSach.resx">
+      <DependentUpon>frmLoaiSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNgonNgu.resx">
+      <DependentUpon>frmNgonNgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSach.resx">
+      <DependentUpon>frmSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTacGia.resx">
+      <DependentUpon>frmTacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTaiKhoan.resx">
+      <DependentUpon>frmTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTra.resx">
+      <DependentUpon>frmTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmViPham.resx">
+      <DependentUpon>frmViPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ForwardIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KhachHangIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LinhVucIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoaiSachIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoutIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NgonNguIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NhanVienIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SachTruyenIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TacGiaIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TaiKhoanIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThueSachIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TraSachIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViPhamIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThongTinIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReportIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_LeftImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_LeftImgCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppIcon.ico" />
+    <Content Include="Resources\book-52 %281%29.png" />
+    <Content Include="Resources\images1.png" />
+    <Content Include="Resources\open-book-icon-png-download-book-black-and-white-11563256975aruucvosij.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets'))" />
+  </Target>
 </Project>

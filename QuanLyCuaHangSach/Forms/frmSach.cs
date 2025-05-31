@@ -210,7 +210,7 @@ namespace BAEK_PERCENT.Forms
                 listViewSach.Items.Add(item);
             }
 
-            AdjustColumnWidth();
+            AdjustColumnWidth(); // dùng để điều chỉnh chiều rộng cột
         }
 
         private void ClearListView()
@@ -464,7 +464,7 @@ namespace BAEK_PERCENT.Forms
         {
             if (ValidateInput())
             {
-                string maNV = txtMaSach.Text.Trim();
+                string maNV = txtMaSach.Text.Trim(); // trim để loại bỏ khoảng trắng
                 string tenNV = txtTenSach.Text.Trim();
 
                 string maLoai = cboMaLoai.SelectedValue.ToString();

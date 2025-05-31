@@ -28,28 +28,28 @@ namespace BAEK_PERCENT.Forms
 
             if (username == "root" && password == "root")
             {
-                Program.FormControl.mainForm.currentRole = UserRole.Admin;
-                Program.FormControl.mainForm.Username = username;
+                Program.FormControl.mainForm.currentRole = UserRole.Admin; // trả về giá trị UserRole.Admin nếu đăng nhập với tài khoản root
+                Program.FormControl.mainForm.Username = username; // gán tên đăng nhập là root
 
                 txtPassword.Clear();
-                lblError.Hide();
+                lblError.Hide(); // ẩn thông báo lỗi nếu đăng nhập thành công
 
-                Program.FormControl.CurrentForm = Program.FormControl.mainForm;
+                Program.FormControl.CurrentForm = Program.FormControl.mainForm; // chuyển sang form chính là mainForm
                 return;
             }
 
             string hashedPassword = Functions.ComputeSha256Hash(password);
-            UserRole? tempRole = LoginDAL.TryLogin(username, hashedPassword);
+            UserRole? tempRole = LoginDAL.TryLogin(username, hashedPassword);  // nếu đăng nhập thành công thì trả về UserRole, nếu không thì trả về null
 
-            if (tempRole.HasValue)
+            if (tempRole.HasValue) // kiểm tra xem tempRole có giá trị hay không, hashValue để tránh lỗi khi tempRole là null
             {
-                Program.FormControl.mainForm.currentRole = tempRole.Value;
-                Program.FormControl.mainForm.Username = username;
+                Program.FormControl.mainForm.currentRole = tempRole.Value; // gán giá trị cho currentRole
+                Program.FormControl.mainForm.Username = username; // gán tên đăng nhập
 
                 txtPassword.Clear();
                 lblError.Hide();
 
-                Program.FormControl.CurrentForm = Program.FormControl.mainForm;
+                Program.FormControl.CurrentForm = Program.FormControl.mainForm; // chuyển sang form chính
             }
             else
             {
@@ -84,6 +84,11 @@ namespace BAEK_PERCENT.Forms
                 txtPassword.Focus();
                 e.SuppressKeyPress = true;
             }
+        }
+
+        private void newfrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

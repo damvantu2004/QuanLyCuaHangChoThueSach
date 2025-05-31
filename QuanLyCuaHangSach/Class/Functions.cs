@@ -8,22 +8,22 @@ namespace BAEK_PERCENT.Class
 {
     internal static class Functions
     {
-        public static void HandleError(string message)
+        public static void HandleError(string message)  // Thông báo lỗi
         {
             MessageBox.Show(message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        public static void HandleInfo(string message)
+        public static void HandleInfo(string message) // Thông báo
         {
             MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        public static void HandleWarning(string message)
+        public static void HandleWarning(string message) // Cảnh báo
         {
             MessageBox.Show(message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        public static bool HandleQuestion(string message)
+        public static bool HandleQuestion(string message) // Hỏi người dùng
         {
             DialogResult result = MessageBox.Show(message, "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
@@ -75,7 +75,7 @@ namespace BAEK_PERCENT.Class
             return dt;
         }
 
-        public static string ChuyenSoSangChu(string sNumber)
+        public static string ChuyenSoSangChu(string sNumber) 
         {
             // Xóa các dấu "," nếu có
             sNumber = sNumber.Replace(",", "");
@@ -151,7 +151,7 @@ namespace BAEK_PERCENT.Class
             return mTemp;
         }
 
-        private static int SkipZeros(string sNumber, int currentIndex)
+        private static int SkipZeros(string sNumber, int currentIndex) // Bỏ qua các số 0 liên tiếp
         {
             int i = currentIndex;
             while (i + 3 < sNumber.Length && sNumber.Substring(i + 1, 3) == "000")
@@ -175,7 +175,7 @@ namespace BAEK_PERCENT.Class
             }
         }
 
-        public static string ComputeSha256Hash(string rawData)
+        public static string ComputeSha256Hash(string rawData) // Tính toán SHA-256 mật khẩu
         {
             // Tạo instance của SHA-256
             using (SHA256 sha256Hash = SHA256.Create())

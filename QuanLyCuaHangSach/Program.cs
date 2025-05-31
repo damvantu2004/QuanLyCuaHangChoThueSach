@@ -19,12 +19,12 @@ namespace BAEK_PERCENT
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Database.DatabaseLayer.Connect();
+            Application.EnableVisualStyles(); // Bật chế độ hiển thị giao diện người dùng hiện đại
+            Application.SetCompatibleTextRenderingDefault(false); // để sử dụng GDI+ cho việc vẽ văn bản
+            Database.DatabaseLayer.Connect(); 
 
-            mainFormManager = new MainFormManager();
-            mainFormManager.CurrentForm = mainFormManager.loginForm;
+            mainFormManager = new MainFormManager(); 
+            mainFormManager.CurrentForm = mainFormManager.loginForm; 
 
             Application.Run(mainFormManager);
         }

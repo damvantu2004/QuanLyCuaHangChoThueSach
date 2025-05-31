@@ -1,0 +1,156 @@
+graph TD
+    subgraph "UI Layer"
+        frmHome["frmHome.cs"]
+        frmSach["frmSach.cs"]
+        frmKhachHang["frmKhachHang.cs"]
+        frmThue["frmThue.cs"]
+        frmTra["frmTra.cs"]
+        frmBaoCao["frmBaoCao.cs"]
+    end
+
+    subgraph "Business Logic Layer"
+        SachBUS["SachBUS.cs"]
+        KhachHangBUS["KhachHangBUS.cs"]
+        ThueBUS["ThueBUS.cs"]
+        TraBUS["TraBUS.cs"]
+        BaoCaoBUS["BaoCaoBUS.cs"]
+    end
+
+    subgraph "Data Access Layer"
+        SachDAL["SachDAL.cs"]
+        KhachHangDAL["KhachHangDAL.cs"]
+        ThueDAL["ThueDAL.cs"]
+        TraDAL["TraDAL.cs"]
+        BaoCaoDAL["BaoCaoDAL.cs"]
+    end
+
+    subgraph "Database Layer"
+        DatabaseLayer["DatabaseLayer.cs"]
+    end
+
+    subgraph "Database"
+        Database[(SQL Server Database)]
+    end
+
+    %% UI to BUS connections
+    frmSach --> SachBUS
+    frmKhachHang --> KhachHangBUS
+    frmThue --> ThueBUS
+    frmTra --> TraBUS
+    frmBaoCao --> BaoCaoBUS
+    
+    frmHome --> frmSach
+    frmHome --> frmKhachHang
+    frmHome --> frmThue
+    frmHome --> frmTra
+    frmHome --> frmBaoCao
+
+    %% BUS to DAL connections
+    SachBUS --> SachDAL
+    KhachHangBUS --> KhachHangDAL
+    ThueBUS --> ThueDAL
+    ThueBUS --> SachDAL
+    ThueBUS --> KhachHangDAL
+    TraBUS --> TraDAL
+    TraBUS --> ThueDAL
+    BaoCaoBUS --> BaoCaoDAL
+
+    %% DAL to DatabaseLayer connections
+    SachDAL --> DatabaseLayer
+    KhachHangDAL --> DatabaseLayer
+    ThueDAL --> DatabaseLayer
+    TraDAL --> DatabaseLayer
+    BaoCaoDAL --> DatabaseLayer
+
+    %% DatabaseLayer to Database connection
+    DatabaseLayer --> Database
+
+    %% SqlParameter usage highlight
+    class DatabaseLayer,SachDAL,KhachHangDAL,ThueDAL,TraDAL,BaoCaoDAL highlight
+
+    classDef highlight fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef default fill:#f5f5f5,stroke:#333,stroke-width:1px;sequenceDiagram
+    participant UI as UI Layer (Forms)
+    participant BUS as Business Logic Layer
+    participant DAL as Data Access Layer
+    participant DB as DatabaseLayer
+    participant SQL as SQL Server
+
+    UI->>BUS: Gọi phương thức nghiệp vụ<br>(Ví dụ: GetSachByMaSach)
+    BUS->>DAL: Gọi phương thức truy vấn dữ liệu<br>(Ví dụ: SachDAL.GetSachByMaSach("S001"))
+    
+    Note over DAL: Tạo câu lệnh SQL với tham số
+    Note over DAL: string sql = "SELECT * FROM Sach WHERE MaSach = @MaSach"
+    
+    Note over DAL: Tạo SqlParameter
+    Note over DAL: SqlParameter[] parameters = { new SqlParameter("@MaSach", maSach) }
+    
+    DAL->>DB: Gọi GetDataToTable(sql, parameters)
+    
+    Note over DB: Tạo SqlCommand và thêm parameters
+    Note over DB: command.Parameters.AddRange(parameters)
+    
+    DB->>SQL: Thực thi câu lệnh SQL với parameters
+    SQL-->>DB: Trả về kết quả (DataTable)
+    DB-->>DAL: Trả về DataTable
+    DAL-->>BUS: Trả về dữ liệu đã xử lý
+    BUS-->>UI: Trả về kết quả cho người dùngclassDiagram
+    class DatabaseLayer {
+        +string connectionString
+        +SqlConnection conn
+        +Connect()
+        +Disconnect()
+        +GetDataToTable(string sql)
+        +GetDataToTable(string sql, SqlParameter[] parameters)
+        +RunSql(string sql, SqlParameter[] parameters)
+        +RunSqlDel(string sql, SqlParameter[] parameters)
+        +CheckKey(string sql, SqlParameter[] parameters)
+    }
+
+    class SachDAL {
+        +GetAllSach()
+        +GetSachByMaSach(string maSach)
+        +GetSachBySearch(string search)
+        +GetSachByMaLoai(string maLoai)
+        +InsertEmptySach()
+        +UpdateSach(...)
+        +DeleteSach(string maSach)
+    }
+
+    class KhachHangDAL {
+        +GetAllKhachHang()
+        +GetKhachHangByMaKH(string maKH)
+        +GetKhachHangBySearch(string search)
+        +InsertEmptyKhachHang()
+        +UpdateKhachHang(...)
+        +DeleteKhachHang(string maKH)
+    }
+
+    class ThueDAL {
+        +GetAllThue()
+        +GetThueByMaThue(string maThue)
+        +GetThongTinCTThue(string maThue)
+        +InsertThue(...)
+        +InsertCTThue(...)
+        +UpdateThue(...)
+        +DeleteThue(string maThue)
+    }
+
+    class BaoCaoDAL {
+        +GetBCDoanhThu(DateTime ngayBD, DateTime ngayKT)
+        +GetBCLoaiSachYeuThich(DateTime ngayBD, DateTime ngayKT)
+        +GetBCSachYeuThich(DateTime ngayBD, DateTime ngayKT)
+    }
+
+    SachDAL --> DatabaseLayer : Sử dụng
+    KhachHangDAL --> DatabaseLayer : Sử dụng
+    ThueDAL --> DatabaseLayer : Sử dụng
+    BaoCaoDAL --> DatabaseLayer : Sử dụng
+
+    note for DatabaseLayer "Xử lý SqlParameter\ntrong các phương thức\nGetDataToTable, RunSql,\nRunSqlDel, CheckKey"
+    
+    note for SachDAL "Sử dụng SqlParameter\ntrong các phương thức\nGetSachByMaSach,\nGetSachBySearch,\nUpdateSach, DeleteSach"
+    
+    note for ThueDAL "Sử dụng SqlParameter\ntrong các phương thức\nGetThueByMaThue,\nGetThongTinCTThue,\nInsertThue, InsertCTThue"
+    
+    note for BaoCaoDAL "Sử dụng SqlParameter\ntrong các phương thức\nGetBCDoanhThu,\nGetBCLoaiSachYeuThich,\nGetBCSachYeuThich"

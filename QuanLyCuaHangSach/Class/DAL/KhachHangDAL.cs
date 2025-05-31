@@ -25,7 +25,7 @@ namespace BAEK_PERCENT.DAL
 
         public static string InsertEmptyKhachHang()
         {
-            string sqlInsert = "INSERT INTO " + TableName + " (TenKH, NgaySinh, GioiTinh, DiaChi, SDT) VALUES ('null', '01/01/2000', 0, 'null', 'null')";
+            string sqlInsert = "INSERT INTO " + TableName + " (TenKH, NgaySinh, GioiTinh, DiaChi, SDT) VALUES ('null', '01/01/2000', 0, 'null', 'null')"; 
 
             DatabaseLayer.RunSql(sqlInsert);
             return GetLastMaKH();

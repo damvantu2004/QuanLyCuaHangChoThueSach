@@ -5,7 +5,7 @@ using System.IO;
 
 namespace BAEK_PERCENT.Class
 {
-    public static class ExcelHelper
+    public static class ExcelHelper // dùng để tạo file excel
     {
         public static void CreateBillThue(System.Data.DataTable tblThongTinThue, System.Data.DataTable tblThongTinCTThue)
         {
@@ -25,7 +25,7 @@ namespace BAEK_PERCENT.Class
             exRange.Font.Bold = true;
             exRange.HorizontalAlignment = XlHAlign.xlHAlignCenter;
             exRange.VerticalAlignment = XlVAlign.xlVAlignCenter;
-            exRange.Value = "BAEK PERCENT";
+            exRange.Value = "Cửa Hàng Sách Truyện";
 
             exRange = exSheet.Range["A3:F3"];
             exRange.Merge();
@@ -208,7 +208,7 @@ namespace BAEK_PERCENT.Class
             exRange.Font.Bold = true;
             exRange.HorizontalAlignment = XlHAlign.xlHAlignCenter;
             exRange.VerticalAlignment = XlVAlign.xlVAlignCenter;
-            exRange.Value = "BAEK PERCENT";
+            exRange.Value = "Cửa Hàng Sách Truyện";
 
             exRange = exSheet.Range["A3:F3"];
             exRange.Merge();
@@ -418,7 +418,7 @@ namespace BAEK_PERCENT.Class
             exRange.Font.Bold = true;
             exRange.HorizontalAlignment = XlHAlign.xlHAlignCenter;
             exRange.VerticalAlignment = XlVAlign.xlVAlignCenter;
-            exRange.Value = "BAEK PERCENT";
+            exRange.Value = "Cửa Hàng Sách Truyện";
 
             exRange = exSheet.Range["A3:C3"];
             exRange.Merge();
@@ -502,7 +502,7 @@ namespace BAEK_PERCENT.Class
             string endDateStr = endDate.ToString("yyMMdd");
 
             // Lưu file Excel
-            string filePath = $"E:\\rkive\\6\\.NET\\BAEK\\Excel\\BaoCao\\DoanhThuThang\\BCDoanhThuThang_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"D:\\Study university\\nam 3\\lap trinh .net\\BTL\\DoanhThu\\DoanhThuThang\\BCDoanhThuThang_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
@@ -537,7 +537,7 @@ namespace BAEK_PERCENT.Class
             exRange.Font.Bold = true;
             exRange.HorizontalAlignment = XlHAlign.xlHAlignCenter;
             exRange.VerticalAlignment = XlVAlign.xlVAlignCenter;
-            exRange.Value = "BAEK PERCENT";
+            exRange.Value = "Cửa Hàng Sách Truyện";
 
             exRange = exSheet.Range["A3:D3"];
             exRange.Merge();
@@ -628,7 +628,7 @@ namespace BAEK_PERCENT.Class
             string endDateStr = endDate.ToString("yyMMdd");
 
             // Lưu file Excel
-            string filePath = $"E:\\rkive\\6\\.NET\\BAEK\\Excel\\BaoCao\\DoanhThuTuan\\BCDoanhThuTuan_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"D:\\Study university\\nam 3\\lap trinh .net\\BTL\\DoanhThu\\DoanhThuTuan\\BCDoanhThuTuan_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
@@ -662,7 +662,7 @@ namespace BAEK_PERCENT.Class
             exRange.Font.Bold = true;
             exRange.HorizontalAlignment = XlHAlign.xlHAlignCenter;
             exRange.VerticalAlignment = XlVAlign.xlVAlignCenter;
-            exRange.Value = "BAEK PERCENT";
+            exRange.Value = "Cửa Hàng Sách Truyện";
 
             exRange = exSheet.Range["A3:B3"];
             exRange.Merge();
@@ -739,7 +739,7 @@ namespace BAEK_PERCENT.Class
             string endDateStr = endDate.ToString("yyMMdd");
 
             // Lưu file Excel
-            string filePath = $"E:\\rkive\\6\\.NET\\BAEK\\Excel\\BaoCao\\DoanhThuNgay\\BCDoanhThuNgay_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
+            string filePath = $"D:\\Study university\\nam 3\\lap trinh .net\\BTL\\DoanhThu\\DoanhThuNgay\\BCDoanhThuNgay_{startDateStr}_{endDateStr}.xlsx"; // Đường dẫn lưu file
 
             if (File.Exists(filePath))
             {
@@ -774,7 +774,7 @@ namespace BAEK_PERCENT.Class
             exRange.Font.Bold = true;
             exRange.HorizontalAlignment = XlHAlign.xlHAlignCenter;
             exRange.VerticalAlignment = XlVAlign.xlVAlignCenter;
-            exRange.Value = "BAEK PERCENT";
+            exRange.Value = "Cửa Hàng Sách Truyện";
 
             exRange = exSheet.Range["A3:B3"];
             exRange.Merge();
@@ -877,7 +877,7 @@ namespace BAEK_PERCENT.Class
             exRange.Font.Bold = true;
             exRange.HorizontalAlignment = XlHAlign.xlHAlignCenter;
             exRange.VerticalAlignment = XlVAlign.xlVAlignCenter;
-            exRange.Value = "BAEK PERCENT";
+            exRange.Value = "Cửa Hàng Sách Truyện";
 
             exRange = exSheet.Range["A3:B3"];
             exRange.Merge();
@@ -980,7 +980,7 @@ namespace BAEK_PERCENT.Class
             exRange.Font.Bold = true;
             exRange.HorizontalAlignment = XlHAlign.xlHAlignCenter;
             exRange.VerticalAlignment = XlVAlign.xlVAlignCenter;
-            exRange.Value = "BAEK PERCENT";
+            exRange.Value = "Cửa Hàng Sách Truyện";
 
             exRange = exSheet.Range["A3:C3"];
             exRange.Merge();
