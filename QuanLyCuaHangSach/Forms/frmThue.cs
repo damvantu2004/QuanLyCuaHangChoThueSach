@@ -486,6 +486,7 @@ namespace BAEK_PERCENT.Forms
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            
             btnThem.Enabled = false;
             btnXoa.Enabled = false;
             btnIn.Enabled = false;

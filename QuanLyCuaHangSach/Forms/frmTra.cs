@@ -439,14 +439,6 @@ namespace BAEK_PERCENT.Forms
 
         private bool ValidateInput()
         {
-            /*
-            if (string.IsNullOrWhiteSpace(txtMaTra.Text))
-            {
-                Functions.HandleWarning("Bạn phải nhập mã trả");
-                txtMaTra.Focus();
-                return false;
-            }
-            */
 
             if (string.IsNullOrWhiteSpace(txtMaThue.Text))
             {
@@ -659,7 +651,7 @@ namespace BAEK_PERCENT.Forms
             if (!string.IsNullOrEmpty(maSach))
             {
                 txtTenSach.Text = SachDAL.GetTenSachByMa(maSach);
-                CalculateGiaPhat();
+
             }
             else
             {
@@ -872,8 +864,8 @@ namespace BAEK_PERCENT.Forms
 
                     DataTable tblTra = ThueDAL.GetCTThue(maThue);
                     DataTable tblCTTra = TraDAL.GetThongTinCTTra(maTra);
-                    tongTien = tblTra.AsEnumerable().Sum(row => row.Field<int>("GiaThue")) + tblCTTra.AsEnumerable().Sum(row => row.Field<int>("ThanhTien"));
-                    txtTongTien.Text = tongTien.ToString();
+                    DataTable tblTienDatCoc = ThueDAL.GetThongTinThue(maThue);
+               
 
                     LoadDataCT(maTra);
                     ResetValuesCT();
@@ -903,59 +895,15 @@ namespace BAEK_PERCENT.Forms
 
                         DataTable tblTra = ThueDAL.GetCTThue(maThue);
                         DataTable tblCTTra = TraDAL.GetThongTinCTTra(maTra);
+                        DataTable tblTienDatCoc = ThueDAL.GetThongTinThue(maThue);
 
                         // Sum up the rental price and individual book prices
                         int totalGiaThue = tblTra.AsEnumerable().Sum(row => row.Field<int>("GiaThue"));
                         int totalThanhTien = tblCTTra.AsEnumerable().Sum(row => row.Field<int>("ThanhTien"));
+                        int tiencoc = tblTienDatCoc.AsEnumerable().Sum(row => row.Field<int>("TienDatCoc"));
 
-                        tongTien = totalGiaThue + totalThanhTien;
-                        txtTongTien.Text = tongTien.ToString();
-
-                        //if (TraDAL.CheckMaThueInsertedInMaTra(maTra, maThue))
-                        //{
-                        //    if (ValidateInput())
-                        //    {
-                        //        string maNV = txtMaNV.Text.Trim();
-
-                        //        DateTime ngayThucTe;
-                        //        if (!DateTime.TryParse(txtNgayThucTe.Text.Trim(), out ngayThucTe))
-                        //        {
-                        //            Functions.HandleWarning("Ngày thực tế không hợp lệ");
-                        //            txtNgayThucTe.Focus();
-                        //            return;
-                        //        }
-
-                        //        try
-                        //        {
-                        //            TraDAL.UpdateTra(maTra, maThue, maNV, ngayThucTe, tongTien);
-
-                        //            Functions.HandleInfo("Cập nhật trả sách thành công");
-
-                        //            // Reload the main data and reset the form
-                        //            LoadData();
-                        //            LoadDataCT("");
-                        //            LoadDataCTThue("");
-
-                        //            ResetValues();
-                        //            ResetValuesCT();
-
-                        //            btnThem.Enabled = true;
-                        //            btnXoa.Enabled = false;
-                        //            btnHuy.Enabled = false;
-                        //            btnLuu.Enabled = false;
-                        //            btnIn.Enabled = false;
-
-                        //            txtMaSach.Enabled = false;
-                        //            btnThemSach.Enabled = false;
-                        //            btnXoaSach.Enabled = false;
-                        //            cboViPham.Enabled = false;
-                        //        }
-                        //        catch (Exception ex)
-                        //        {
-                        //            Functions.HandleError("Lỗi khi cập nhật trả sách: " + ex.Message);
-                        //        }
-                        //    }
-                        //}    
+                        tongTien = totalGiaThue + totalThanhTien - tiencoc;
+                        txtTongTien.Text = tongTien.ToString();  
 
                         LoadDataCT(maTra);
                         ResetValuesCT();

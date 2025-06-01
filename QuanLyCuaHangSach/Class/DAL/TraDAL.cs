@@ -344,57 +344,40 @@ namespace BAEK_PERCENT.DAL
 
         public static int CalcTongTien(string maThue)
         {
-            // Trường hợp mã thuê đã tồn tại mã trả nhưng không có vi phạm
-            string sqlWithReturnNoFine = @"
-                SELECT COALESCE(SUM(CTT.GiaThue), 0) AS TongTien 
-                FROM CTThueSach CTT 
-                INNER JOIN " + TableName + @" Tr ON Tr.MaThue = CTT.MaThue 
-                WHERE CTT.MaThue = @MaThue";
-
-            // Trường hợp mã thuê đã tồn tại mã trả và có vi phạm
-            string sqlWithReturn = @"
-                SELECT COALESCE(SUM(CTT.GiaThue), 0) + COALESCE(SUM(CTTr.ThanhTien), 0) AS TongTien 
-                FROM CTThueSach CTT 
-                INNER JOIN " + TableName + @" Tr ON Tr.MaThue = CTT.MaThue 
-                INNER JOIN " + TableCTName + @" CTTr ON Tr.MaTra = CTTr.MaTra 
-                WHERE CTT.MaThue = @MaThue;";
-
-            // Trường hợp mã thuê chưa tồn tại mã trả
-            string sqlWithoutReturn = "SELECT SUM(GiaThue) AS TongTien FROM CTThueSach WHERE MaThue = @MaThue";
-
+            // 1. Lấy tổng tiền thuê từ bảng CTThueSach
+            string sqlGiaThue = "SELECT COALESCE(SUM(GiaThue), 0) AS TongGiaThue FROM CTThueSach WHERE MaThue = @MaThue";
             SqlParameter[] sqlParams = { new SqlParameter("@MaThue", maThue) };
 
-            string sql;
+            DataTable dtGiaThue = DatabaseLayer.GetDataToTable(sqlGiaThue, sqlParams);
 
-            string maTra = GetMaTraFromMaThue(maThue);
+            int giaThue = 0;
+            int tienCoc = 0;
 
-            if (!string.IsNullOrEmpty(maTra))
+            if (dtGiaThue.Rows.Count > 0 && dtGiaThue.Rows[0]["TongGiaThue"] != DBNull.Value)
             {
-                bool hasFine = CheckIfReturnFineExists(maTra);
-                sql = hasFine ? sqlWithReturn : sqlWithReturnNoFine;
-            }
-            else
-            {
-                sql = sqlWithoutReturn;
+                giaThue = Convert.ToInt32(dtGiaThue.Rows[0]["TongGiaThue"]);
             }
 
-            DataTable dt = DatabaseLayer.GetDataToTable(sql, sqlParams);
+            // 2. Lấy tiền đặt cọc bằng cách lọc DataTable
+            DataTable data = ThueDAL.GetAllThue();
+            string escapedMaThue = maThue.Replace("'", "''");
+            DataRow[] rows = data.Select($"MaThue = '{escapedMaThue}'");
 
-            if (dt.Rows.Count > 0 && dt.Rows[0]["TongTien"] != DBNull.Value)
+            if (rows.Length > 0 && rows[0]["TienDatCoc"] != DBNull.Value)
             {
-                if (int.TryParse(dt.Rows[0]["TongTien"].ToString(), out int tongTien))
-                {
-                    return tongTien;
-                }
-                else
-                {
-                    throw new FormatException("Không có tổng tiền.");
-                }
+                tienCoc = Convert.ToInt32(rows[0]["TienDatCoc"]);
             }
-            else
-            {
-                return 0;
-            }
+
+            // 3. Trả về tổng tiền = tiền thuê - tiền đặt cọc
+            return giaThue - tienCoc;
         }
+
+
+
+
+
+
+
+
     }
 }
