@@ -865,7 +865,9 @@ namespace BAEK_PERCENT.Forms
                     DataTable tblTra = ThueDAL.GetCTThue(maThue);
                     DataTable tblCTTra = TraDAL.GetThongTinCTTra(maTra);
                     DataTable tblTienDatCoc = ThueDAL.GetThongTinThue(maThue);
-               
+                    tongTien = TraDAL.CalcTongTien(maThue) + tblCTTra.AsEnumerable().Sum(row => row.Field<int>("ThanhTien"));
+                    txtTongTien.Text = tongTien.ToString();
+
 
                     LoadDataCT(maTra);
                     ResetValuesCT();
